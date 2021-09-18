@@ -1,4 +1,3 @@
 # SimpleUpdater
-Very simple c# updater <br />
--No encryption yet but if i can be bothered i will add a example(Do not use for release).<br />
--Uses a website to update via comparing the versions online and offline<br />
+![Untitled-1](https://user-images.githubusercontent.com/28870502/133909160-9a27d0be-9199-4c40-9d65-191f937f0a26.png)
+
