@@ -24,6 +24,13 @@ if (content != Version) //checks if the website up to date version is the same
         try
         {
             string sourceFile = System.Reflection.Assembly.GetExecutingAssembly().Location;
+              try
+              {
+                   File.Delete(sourceFile + ".sBackup");
+              }
+              catch (FileNotFoundException)
+              {
+              };
             System.IO.FileInfo fi = new System.IO.FileInfo(sourceFile);
             fi.MoveTo(sourceFile + ".Backup"); //makes old exe a .backup so you can revert if required
             WebClient Download = new WebClient();
